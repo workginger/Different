@@ -2,12 +2,13 @@ import { createApp } from "vue";
 
 import App from "@/App.vue";
 import router from "@/router";
+import PrimeVue from "primevue/config";
 
 const app = createApp(App);
 
-// 自訂元件
-import Breadcrumbs from "@/components/Breadcrumbs.vue";
+import Breadcrumb from "primevue/breadcrumb";
 
-app.component("Breadcrumbs", Breadcrumbs);
 app.use(router);
+app.use(PrimeVue);
+app.component("Breadcrumb", Breadcrumb);
 app.mount("#app");
