@@ -1,0 +1,11 @@
+// 讓 vs code crtl 連結過去
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./resources/js/*"]
+    }
+  },
+  "exclude": ["node_modules", "public"]
+}
